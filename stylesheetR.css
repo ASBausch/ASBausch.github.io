@@ -1,0 +1,145 @@
+.background {
+	width: 960px;
+	height:1400px;
+	border:2px solid silver;
+	margin: auto;
+	padding: 20px;
+	background-color: #fffafa;
+	display: block;
+	z-index: -3;
+}
+
+.row {
+	width: 100%;
+	position: relative;
+	background-color: transparent;
+	clear: both;
+
+}
+.rowfoot {
+	margin-top: 10px;
+	padding-top: 10px;
+	margin-left: 50px;
+}
+
+.col {
+	width: 45%;
+	padding-left: 20px;
+	background-color: transparent;
+	float: left;
+}
+
+.vincol{
+	height:330px;
+}
+.opacity {
+	opacity:.5;
+}
+
+.circle {
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.yellowcirc { 
+	background-color: #ffff99;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+	line-height: 172px; 
+}
+
+.orangecirc {
+	background-color: #ff9933;
+    left: -80px;
+    top: 0px;
+    z-index: 1;
+	line-height: 172px; 
+}
+
+.greencirc {
+	background-color: #66cc66;
+    left: 0px;
+    top: -100px;
+    z-index: 3;
+	line-height: 272px; 
+	
+}
+
+.bluecirc {
+	background-color: #3366cc;
+    left: -80px;
+    top: -100px;
+    z-index: 2;
+	line-height: 272px; 
+
+}
+.header {
+	padding: 10px;
+	margin-bottom: 40px;
+
+}
+
+h3 {
+	font-family: Lucida;
+	color: black; 
+	font-size: 17px
+}
+ul {
+	font-family: Georgia;
+	color: black; 
+	font-size: 15px
+}
+
+li {
+	font-family: Georgia;
+	color: black; 
+	font-size: 14px
+
+}
+h1 {
+	font-family: Lucida;
+	font-variant: small-caps;
+	color: black; 
+	font-size: 25px
+}
+
+h2 {
+	font-family: Lucida;
+	font-variant: small-caps;
+	color: black; 
+	font-size: 17px
+}
+.jobsum {
+	padding:20px;
+	background-color:transparent;
+	position: relative;
+	height: 300px;
+	clear: both;
+	margin-bottom: 10px;
+
+}
+
+.jobcontent {
+	background-color:#fffafa;
+	padding: 20px;
+	position: absolute;						
+	top: 0px;
+	margin-left: 50px
+}
+
+.circlebackground {
+	width: 45%;
+	height: 300px;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	z-index: 0;
+}
+
