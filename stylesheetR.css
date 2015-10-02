@@ -8,6 +8,7 @@
 	background-color: #fffafa;
 	display: block;
 	z-index: -3;
+	box-shadow:2px 2px 3px #000;
 }
 
 .row {
@@ -23,6 +24,18 @@
 	margin-left: 50px;
 }
 
+.list {
+	position: absolute;
+	left:365px;
+	top:120px;
+}
+
+.intro {
+	position: absolute;
+	left:550px;
+	margin-right: 60px;
+}
+
 .col {
 	width: 45%;
 	padding-left: 20px;
@@ -30,10 +43,44 @@
 	float: left;
 }
 
+/*vin label elements*/
+
 .vincol{
 	height:330px;
 }
 
+.label {
+	position:absolute;
+	font-variant: small-caps;
+}
+
+.labeltop {
+	top:50px;
+}
+
+.labelbot {
+	top:195px;
+}
+
+.labelyellow{
+	left:50px;
+	z-index: 1;
+}
+
+.labelorange{
+	left:225px;
+	z-index: 2;
+}
+
+.labelgreen{
+	left:90px;
+	z-index: 4;
+}
+
+.labelblue{
+	left:225px;
+	z-index: 3;
+}
 /* vin and circle elements*/
 .opacity {
 	opacity:.5;
@@ -48,6 +95,7 @@
 	text-align: center;
 	vertical-align: middle;
 	font-weight: bold;
+	border:solid 1px;
 }
 /* for vin overlap*/
 .yellowcirc { 
@@ -55,7 +103,6 @@
     left: 0px;
     top: 0px;
     z-index: 0;
-	line-height: 172px; 
 }
 
 .orangecirc {
@@ -63,7 +110,6 @@
     left: -80px;
     top: 0px;
     z-index: 1;
-	line-height: 172px; 
 }
 
 .greencirc {
@@ -71,8 +117,6 @@
     left: 0px;
     top: -100px;
     z-index: 3;
-	line-height: 272px; 
-	
 }
 
 .bluecirc {
@@ -80,44 +124,63 @@
     left: -80px;
     top: -100px;
     z-index: 2;
-	line-height: 272px; 
-
 }
+
 .header {
 	padding: 10px;
 	margin-bottom: 40px;
+}
 
-}
 /* text elements*/
-h3 {
-	font-family: Lucida;
-	color: black; 
-	font-size: 17px
-}
+
 ul {
-	font-family: Georgia;
+	font-family: Arial, Helvetica, sans-serif;;
 	color: black; 
 	font-size: 15px
 }
 
 li {
-	font-family: Georgia;
+	font-family: Arial, Helvetica, sans-serif;;
 	color: black; 
 	font-size: 14px
-
 }
+
 h1 {
-	font-family: Lucida;
+	font-family: Arial, Helvetica, sans-serif;
 	font-variant: small-caps;
 	color: black; 
 	font-size: 25px
 }
 
 h2 {
-	font-family: Lucida;
+	font-family: Arial, Helvetica, sans-serif;
 	font-variant: small-caps;
 	color: black; 
-	font-size: 17px
+	font-size: 14px
+	
+}
+
+h3 {
+	font-family: Arial, Helvetica, sans-serif;;
+	color: black; 
+	font-size: 17px;
+	}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+i {
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: oblique;
+	font-size: 10px;
+}
+
+b {
+	font-family: Arial, Helvetica, sans-serif;
+	font-variant: small-caps;
+	color: black; 
+	font-size: 18px;
 }
 
 /* description spacing and circle background*/
@@ -129,7 +192,6 @@ h2 {
 	height: 300px;
 	clear: both;
 	margin-bottom: 10px;
-
 }
 
 .jobcontent {
@@ -148,4 +210,41 @@ h2 {
 	top: 0px;
 	z-index: 0;
 }
+
+.job{
+	height:300px;
+}
+
+.job:hover{
+	border: solid 1px 
+}
+
+.studiomanager {
+}
+
+.studiomanager:hover {
+	background-color:#FFFFE6;
+}
+
+.digitalsimple {
+}
+
+.digitalsimple:hover {
+	background-color:#cee4cd;
+}
+
+.shaneco {
+}
+
+.shaneco:hover {
+	background-color:#FFDAB3;
+}
+
+.home {	
+}
+
+.home:hover{
+	background-color:#CAD1E1;
+}
+
 
