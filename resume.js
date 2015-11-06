@@ -9,35 +9,21 @@ $(document).ready(function(){
 //needs refactoring
 //can I refactor these functions to make ONE
 	
-	$('p.labelyellow').one('click', function(){
-		var years = '<br />8years'
-		$(this).append(years);
+	var highlightit = function(){
+		var years = $(this).data('years')
+		$(this).append('<br />' + years + ' years');
 		$(this).addClass('labelchange');
-	});
+	}
 
-	$('p.labelorange').one('click', function(){
-		var years = '<br />6years'
-		$(this).append(years);
-		$(this).addClass('labelchange');
+	$('p.labelyellow').one('click', highlightit);	
 
-	});
+	$('p.labelorange').one('click', highlightit);
 
-	//why did "this" work in the selectors but not the full attribute list?
+	$('p.labelgreen').one('click', highlightit);
 
-	$('p.labelgreen').one('click', function(){
-		var years = '<br />14years'
-		$(this).append(years);
-		$(this).addClass('labelchange');
+	$('p.labelblue').one('click', highlightit);
 
-	});
-
-	$('p.labelblue').one('click', function(){
-		var years = '<br />20years'
-		$(this).append(years);
-		$(this).addClass('labelchange');
-
-	});
-
+	
 	
 });
 
