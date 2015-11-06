@@ -6,8 +6,6 @@ $(document).ready(function(){
 	});	
 
 //adds explanation years to vin circle labels and bolds upon click
-//needs refactoring
-//can I refactor these functions to make ONE
 	
 	var highlightit = function(){
 		var years = $(this).data('years')
@@ -15,16 +13,8 @@ $(document).ready(function(){
 		$(this).addClass('labelchange');
 	}
 
-	$('p.labelyellow').one('click', highlightit);	
+	$('section.vincol').children().filter(":even").one('click', highlightit)
 
-	$('p.labelorange').one('click', highlightit);
-
-	$('p.labelgreen').one('click', highlightit);
-
-	$('p.labelblue').one('click', highlightit);
-
-	
-	
 });
 
 
