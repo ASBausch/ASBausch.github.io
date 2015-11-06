@@ -47,6 +47,15 @@ button {
 	position: absolute;
 	left:550px;
 	margin-right: 60px;
+	padding: 20px;
+	transition: background-color 1s linear, border 1s linear, 
+	border-radius 1s linear;
+}
+
+.intro:hover {
+	background-color: #cee4cd;
+	border-radius: 15%;
+	
 }
 
 .col {
@@ -63,7 +72,7 @@ button {
 }
 
 .labelchange{
-	font-weight: 900
+	font-weight: 500;
 }
 
 .vincol{
@@ -165,6 +174,12 @@ main {
 	color: black;
 }
 
+.weight {
+	font-weight: 500;
+	font-variant: small-caps;
+
+}
+
 ul {
 	font-size: 15px
 }
@@ -174,13 +189,11 @@ li {
 }
 
 h1 {
-	font-variant: small-caps;
-	font-size: 25px
+	font-size: 25px;
 }
 
 h2 {
-	font-variant: small-caps;
-	font-size: 14px
+	font-size: 14px;
 }
 
 h3 {
@@ -193,8 +206,11 @@ i {
 }
 
 b {
-	font-variant: small-caps;
 	font-size: 18px;
+}
+
+a {
+	color: green;
 }
 
 /* description spacing and circle background*/
@@ -227,17 +243,12 @@ b {
 
 .job{
 	height:300px;
-	transition: background-color 1s linear, border 1s linear, 
-	border-radius 1s linear, font-weight 1s linear;
-
+	transition: background-color 1s linear, border-radius 1s linear;
 }
 
 .job:hover{
-	border: solid 1px; 
-	border-color: #808080;
-	font-weight: 600;
-	border-radius: 20%;
-
+	font-weight: 500;
+	border-radius: 18%;
 }
 
 .studiomanager {
@@ -245,7 +256,6 @@ b {
 
 .studiomanager:hover {
 	background-color:#FFFFE6;
-	
 }
 
 .digitalsimple {
