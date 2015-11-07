@@ -7,13 +7,16 @@ $(document).ready(function(){
 
 //adds explanation years to vin circle labels and bolds upon click
 	
-	var highlightit = function(){
+	var highlightit = function() {
 		var years = $(this).data('years')
-		$(this).append('<br />' + years + ' years');
-		$(this).addClass('labelchange');
-	}
+		if($(this).has(".detail").length) {
+			$(this).find(".detail").remove();
+		} else {	
+		    $(this).append('<span class= "detail"><br />' + years + 'years</span>');
+	    }
+    };
 
-	$('section.vincol').children().filter(":even").one('click', highlightit)
+	$('section.vincol').children().filter(":even").on('click', highlightit)
 
 });
 
